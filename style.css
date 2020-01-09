@@ -1,0 +1,17 @@
+#mainForm {
+    padding: 2em;
+    
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+
+strong {
+    color: red;
+}
+

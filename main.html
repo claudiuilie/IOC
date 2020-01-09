@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Main page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h2 align="center">Simple Calculator</h1>
+    <div id="container">
+        <div id="mainForm" align="center">
+            <form action="" method="get" id="mainForm" onsubmit="event.preventDefault(); calculate();">
+                <strong id="firstSpan"> Insert value:</strong>
+                <input type="number" id="firstValue" required onkeyup="changeColor(firstSpan, this)">
+                Operator
+                <select id="operator">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="/">/</option>
+                        <option value="*">*</option>
+                </select>
+                <strong id="secondSpan"> Insert value:</strong>
+                <input type="number" id="secondValue" required onkeyup="changeColor(secondSpan , this)">
+                <button type="submit" id="submit" >Calculate</button>
+            </form>
+            Result: <strong id="result"></strong>
+        </div>
+    </div>
+</body>
+</html>
